@@ -1,0 +1,49 @@
+.logo{
+  height: 100px;
+  display: inline-block;
+  margin-top: 10px;
+}
+/*.logo img:hover{
+  transform: scaleZ(2);
+}*/
+.midbox{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.headerbox{
+  height: 120px;
+  line-height: 120px;
+}
+.midbox ul{
+  list-style: none;
+  float: right;
+  margin: 0;
+}
+.midbox ul li{
+  list-style: none;
+  display: inline-block;
+  width: 160px;
+}
+.midbox ul li a{
+  color: #4d5158;
+  text-decoration: none;
+  font-size: 14px;
+  height: 44px;
+  box-sizing: border-box;
+  line-height: 44px;
+  display: block;
+  text-align: center;
+  letter-spacing: normal;
+  white-space: nowrap;
+}
+.midbox ul li a:hover{
+  color: #00684d;
+  background: transparent;
+  font-weight: bold;
+  border-top-width: 0px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  text-decoration: none;
+}

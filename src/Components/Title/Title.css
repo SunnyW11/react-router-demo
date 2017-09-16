@@ -1,0 +1,23 @@
+.titleBox {
+  width: 100%;
+  min-width: 1200px;
+  text-align: center;
+  padding: 10px 0 25px;
+}
+.titleBox h1{
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom:0.2em; 
+}
+.titleBox span{
+  display: inline-block;
+  width: 400px;
+  font-size: 26px;
+  color: #fff;
+  background: #999;
+  padding: 10px 0
+}
+.titleBox p{
+  font-size: 24px;
+  margin: 0.3em 0;
+}

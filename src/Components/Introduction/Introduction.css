@@ -1,0 +1,26 @@
+.introduction{
+  padding: 30px 0;
+}
+.introductionBox{
+
+}
+.introductionLeft{
+  width: 45%;
+  display: inline-block;
+}
+.introductionRight{
+  display: inline-block;
+  width: 55%;
+  vertical-align: top;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+.introductionRight .title{
+  text-align: center;
+  font-size: 26px;
+}
+.introductionRight .content{
+  font-size: 20px;
+  line-height: 46px;
+  text-indent:40px;
+}
