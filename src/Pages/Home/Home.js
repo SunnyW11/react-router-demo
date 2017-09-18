@@ -92,8 +92,31 @@ const LatestNewsList =[
   }
 ];
 export default class Home extends Component {
-  render() {
+  constructor(){
+    super();
+    this.state={
+      isLoading:true
+    }
+  }
+  componentWillMount(){
+    
+  }
+  // 数据加载完成 返回 change state   
+  componentDidMount(){
+    setTimeout(()=>{
+      this.setState({isLoading:false});
+    },3000)
+  }
 
+  render() {
+     // 数据未加载完成 返回 loading 提示用户  
+    if(this.state.isLoading){
+      return (
+        <div>
+          <h3>loading</h3>
+        </div>
+      );
+    }
     return (
       <div>
         <Banner />
