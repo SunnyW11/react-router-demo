@@ -5,6 +5,7 @@ import Recommend from '../../Components/Recommend/Recommend';
 import Title from '../../Components/Title/Title';
 import Gallery from '../../Components/Gallery/Gallery';
 import DesignTeam from '../../Components/DesignTeam/DesignTeam';
+import LatestNews from '../../Components/LatestNews/LatestNews';
 
 const Recommend1 = {
   title: '创意新奇浪漫可爱特别实用送男女生闺蜜鲜花手表',
@@ -73,6 +74,23 @@ const designer = [
   }
 ];
 
+const LatestNewsList =[
+  {
+    imgUrl:'../pic/news2.jpg',
+    title:'听说上海的年轻人最近周末都去做手工了',
+    time:'2017-09-12'
+  },
+  {
+    imgUrl:'../pic/news3.jpg',
+    title:'重拾手工乐趣 传统工艺悄然复兴',
+    time:'2017-09-12'
+  },
+  {
+    imgUrl:'../pic/news4.jpg',
+    title:'那些快手上的青年匠人 捡起了被淡忘的传统手工艺',
+    time:'2017-09-12'
+  }
+];
 export default class Home extends Component {
   render() {
 
@@ -87,6 +105,7 @@ export default class Home extends Component {
         <Title prams={Title2} />
         <DesignTeam prams={designer} />
         <Title prams={Title3} />
+        <LatestNews params={LatestNewsList}/>
       </div>
     );
   }

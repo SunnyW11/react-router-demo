@@ -1,0 +1,22 @@
+
+.latestNews li{
+  width: 30%;
+  margin:5px 15px;
+  display: inline-block;
+  padding:10px 0  ;
+  border-bottom: 1px solid #f1f1f1;
+  box-shadow: #e5e5e5 4px 4px 16px;
+  cursor: pointer;
+}
+.latestNews li .bottom-world{
+  min-height: 60px;
+  padding-left: 10px;
+}
+.latestNews li p{
+  height: 40px;
+  font-size: 16px;
+  margin: 0;
+  text-overflow: ellipsis;
+  margin-bottom:10px; 
+  margin-top:10px; 
+}
