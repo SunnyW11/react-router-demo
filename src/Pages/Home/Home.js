@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+/* 引入组件*/
 import Banner from '../../Components/Banner/Banner'
 import Introduction from '../../Components/Introduction/Introduction';
 import Recommend from '../../Components/Recommend/Recommend';
@@ -6,6 +7,9 @@ import Title from '../../Components/Title/Title';
 import Gallery from '../../Components/Gallery/Gallery';
 import DesignTeam from '../../Components/DesignTeam/DesignTeam';
 import LatestNews from '../../Components/LatestNews/LatestNews';
+/* 引入公共函数*/
+// import { Public } from '../../Components/PublicFn/PublicFn';
+
 
 const Recommend1 = {
   title: '创意新奇浪漫可爱特别实用送男女生闺蜜鲜花手表',
@@ -91,29 +95,33 @@ const LatestNewsList =[
     time:'2017-09-12'
   }
 ];
+
 export default class Home extends Component {
   constructor(){
     super();
     this.state={
       isLoading:true
     }
-  }
-  componentWillMount(){
-    
+    // this.changeHeaderByPath=Public.changeHeaderByPath.bind(this);
   }
   // 数据加载完成 返回 change state   
-  componentDidMount(){
+  componentDidMount(){    
+    // 此方法废弃。
+    // this.changeHeaderByPath(0);
+
+    
     setTimeout(()=>{
       this.setState({isLoading:false});
-    },3000)
+    },500)
+
   }
 
   render() {
      // 数据未加载完成 返回 loading 提示用户  
     if(this.state.isLoading){
       return (
-        <div>
-          <h3>loading</h3>
+        <div style={{'minHeight':'100vh'}}>
+          <h3 style={{textAlign:'center'}}>loading</h3>
         </div>
       );
     }

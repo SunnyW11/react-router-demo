@@ -15,8 +15,8 @@ import Product from './Pages/Product/Product';
 import News from './Pages/News/News';
 import Connect from './Pages/Connect/Connect';
 import Footer from './Components/Footer/Footer';
-          // <CSSTransitionGroup transitionName="fade" transitionEnterTimeout={300} transitionLeaveTimeout={300}>
-          // </CSSTransitionGroup>
+// <CSSTransitionGroup transitionName="fade" transitionEnterTimeout={300} transitionLeaveTimeout={300}>
+// </CSSTransitionGroup>
 
 class App extends Component {
   render() {
