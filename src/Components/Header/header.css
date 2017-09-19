@@ -38,9 +38,9 @@
   letter-spacing: normal;
   white-space: nowrap;
 }
-.midbox ul li a:hover{
+.midbox ul li a:hover,.midbox ul li a.active{
   color: #00684d;
-  background: transparent;
+  /*background: transparent;*/
   font-weight: bold;
   border-top-width: 0px;
   border-bottom-width: 2px;
