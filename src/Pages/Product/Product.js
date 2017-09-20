@@ -6,7 +6,7 @@ import Gallery from '../../Components/Gallery/Gallery';
 import './Product.css';
 
 const staticBanner={
-  imgUrl:'../pic/banner3.jpg',
+  imgUrl:'../pic/banner4.jpg',
   name:'产品展示',
   englishName:'show product'
 }

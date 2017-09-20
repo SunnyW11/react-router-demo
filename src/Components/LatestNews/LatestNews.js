@@ -9,7 +9,7 @@ export default class LatestNews extends Component {
   }
   hoverEvent(e){
     e.preventDefault();
-    e.currentTarget.getElementsByTagName('p')[0].style.color='#00684d' ;
+    e.currentTarget.getElementsByTagName('p')[0].style.color='#37c386' ;
   }
   onmouseleaveEvent(e){
     e.preventDefault();
