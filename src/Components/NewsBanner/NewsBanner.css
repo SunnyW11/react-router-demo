@@ -1,0 +1,57 @@
+.newsBanner{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.newsBanner ul{
+  width: 100%;
+  /*height: 100%;*/
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.midbox .newsBanner ul li{
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: none;
+  transition: all 1s;
+}
+.midbox .newsBanner ul li img{
+  transition: all 1.5s;
+}
+.midbox .newsBanner ul li.active{
+  display: block;
+}
+.newsBanner li .word-container{
+  width: 70%;
+  padding: 10px;
+  background: rgba(0,0,0,.6);
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  color: #ccc;
+}
+.newsBanner li .word-container p{
+  color: #fff;
+  margin-top: 0;
+}
+.newsBanner .pageBtn{
+  position: absolute;
+  bottom: 3px;
+  right: 0px;
+}
+.newsBanner .pageBtn button{
+  padding: 3px 6px;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  transition: all 1s;
+}
+.newsBanner .pageBtn button.active{
+  background: #fff;
+  color: #000;
+  
+}

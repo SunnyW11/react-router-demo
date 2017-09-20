@@ -21,8 +21,5 @@
   transition: 0.35s all;
 }
 .gallery ul li img:hover{
-  /*transform:scaleZ(20px);*/
-  /*display: none;*/
-  transform: rotate(180deg)
-  /*transform: rotateY(180deg);*/
+  transform: scale(1.3);
 }

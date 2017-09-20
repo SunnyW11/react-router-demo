@@ -8,8 +8,8 @@ import {
 } from 'react-router-dom';
 
 // Route里面 children 和 component不同，children会一直显示 ，component则是在路由匹配的时候显示。    
-const OldSchoolMenuLink = ({ label, to }) => (
-  <Route path={to} children={({ match }) => (
+const OldSchoolMenuLink = ({ label, to , activeOnlyWhenExact }) => (
+  <Route path={to}  exact={activeOnlyWhenExact} children={({ match }) => (
     <li >
       <Link to={to} className={match ? 'active' : ''}>{label}</Link>
     </li>
@@ -31,7 +31,7 @@ export default class Header extends React.Component {
         <div className='midbox headerbox'>
           <a href="#" className='logo'><img src='../pic/logo.png'/></a>
           <ul>
-              <OldSchoolMenuLink to="/home" label="主页"/>
+              <OldSchoolMenuLink to="/" activeOnlyWhenExact={true} label="主页"/>
               <OldSchoolMenuLink to="/aboutUs" label="关于我们"/>
               <OldSchoolMenuLink to="/product" label="产品展示"/>
               <OldSchoolMenuLink to="/news" label="资讯中心"/>

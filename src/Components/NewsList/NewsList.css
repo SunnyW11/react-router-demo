@@ -1,0 +1,37 @@
+.newsList .midbox{
+  width: 1100px;
+}
+.newsList ul.midbox{
+  padding-left: 0;
+}
+.newsList li{
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: all 1s;
+}
+.newsList li img{
+  width: 120px;
+  height: 100px;
+  float: left;
+}
+.newsList li .bottom-world{
+  float: left;
+  width: calc(100% - 150px);
+  height: 100px;
+  padding-left: 25px;
+}
+.newsList li .bottom-world p{
+  font-size: 18px;
+  margin: 8px 0;
+}
+.newsList li .bottom-world hr{
+  border-left: none;
+  border-top: none;
+  border-color:#ddd; 
+}
+.newsList li .bottom-world span{
+  color: #888;
+  font-size: 14px;
+  line-height: 22px;
+}
