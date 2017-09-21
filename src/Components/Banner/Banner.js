@@ -6,8 +6,8 @@ export default class Banner extends Component {
     return(
       <div className='banner'>
         <ul className='picBox'>
-          <li className='active'><img src="../pic/banner.jpg" alt="" width='100%' height='100%'/></li>
-          <li><img src="../pic/banner2.jpg" alt=""  width='100%' height='100%'/></li>
+          <li className='active'><img src="../pic/banner.jpg" alt=" " width='100%' height='100%'/></li>
+          <li><img src="../pic/banner2.jpg" alt=" "  width='100%' height='100%'/></li>
         </ul>
         <div className='circle'>
           <a href="javascript:return false;" className='active'></a>

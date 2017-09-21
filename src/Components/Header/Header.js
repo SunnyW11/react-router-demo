@@ -1,8 +1,6 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
 import './header.css';
 import {
-  BrowserRouter as Router,
   Link,
   Route
 } from 'react-router-dom';
@@ -29,7 +27,7 @@ export default class Header extends React.Component {
     return (
       <div className='header'>
         <div className='midbox headerbox'>
-          <a href="#" className='logo'><img src='../pic/logo.png'/></a>
+          <a href="/"className='logo'><img src='../pic/logo.png' alt='picture'/></a>
           <ul>
               <OldSchoolMenuLink to="/" activeOnlyWhenExact={true} label="主页"/>
               <OldSchoolMenuLink to="/aboutUs" label="关于我们"/>

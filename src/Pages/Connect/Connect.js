@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Title from '../../Components/Title/Title';
 import StaticBanner from '../../Components/StaticBanner/StaticBanner';
-import LatestNews from '../../Components/LatestNews/LatestNews';
 
 import './Connect.css';
 
