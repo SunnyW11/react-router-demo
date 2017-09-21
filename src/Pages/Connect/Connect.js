@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Title from '../../Components/Title/Title';
 import StaticBanner from '../../Components/StaticBanner/StaticBanner';
+import Map from '../../Components/Map/Map';
 
 import './Connect.css';
 
@@ -20,6 +21,11 @@ export default class Connect extends Component{
       <div className='connect'>
         <StaticBanner params={staticBanner}/>
         <Title prams={Title1} />
+        <div className='midbox' style={{width:'1100px',marginTop:'30px'}}>
+          <div style={{width:'550px',height:'370px'}}>
+            <Map />
+          </div>
+        </div>
       </div>
     );
   }
