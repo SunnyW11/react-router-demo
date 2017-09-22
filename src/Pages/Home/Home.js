@@ -96,6 +96,10 @@ const LatestNewsList =[
   }
 ];
 
+const bannerParams=[
+  {imgUrl:'../pic/banner.jpg'},
+  {imgUrl:'../pic/banner2.jpg'}
+];
 export default class Home extends Component {
   constructor(){
     super();
@@ -127,7 +131,7 @@ export default class Home extends Component {
     }
     return (
       <div>
-        <Banner />
+        <Banner params={bannerParams}/>
         <Introduction />
         <Recommend prams={Recommend1} />
         <Title prams={Title1} />

@@ -23,7 +23,7 @@ export default class NewsBanner extends Component {
     window.timerCtrl = setInterval(() => {
       // console.log(this.state.crrentIndex)
       this.change();
-    }, 3000);
+    }, 5000);
   }
 
   componentDidMount() {

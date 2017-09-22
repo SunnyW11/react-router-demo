@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from '../../Components/Title/Title';
 import StaticBanner from '../../Components/StaticBanner/StaticBanner';
 import Map from '../../Components/Map/Map';
+import MessageBoard from '../../Components/MessageBoard/MessageBoard';
 
 import './Connect.css';
 
@@ -22,8 +23,11 @@ export default class Connect extends Component{
         <StaticBanner params={staticBanner}/>
         <Title prams={Title1} />
         <div className='midbox' style={{width:'1100px',marginTop:'30px'}}>
-          <div style={{width:'550px',height:'370px'}}>
+          <div className='connectItem map-container' >
             <Map />
+          </div>
+          <div className='connectItem form-container' >
+            <MessageBoard />
           </div>
         </div>
       </div>

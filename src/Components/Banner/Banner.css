@@ -11,16 +11,17 @@
 }
 .picBox li {
   display: none;
+  transform: all 1s;
 }
 .picBox li.active {
   display: block;
 }
-.banner .btn-pre,
+.banner .btn-prev,
 .banner .btn-next{
   position: absolute;
   top:160px;
 }
-.banner .btn-pre{
+.banner .btn-prev{
   left: 15px;
 }
 .banner .btn-next{
@@ -33,7 +34,7 @@
   position: absolute;
   bottom:25px;
 }
-.circle a{
+.circle button{
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -41,7 +42,7 @@
   border-radius: 100%;
   margin: 0 10px;
 }
-.circle a.active{
+.circle button.active{
   background: #ccc;
 }
 

@@ -1,0 +1,11 @@
+.connectItem{
+  width:550px;
+  height:370px;
+  float:left;
+  box-sizing: border-box;
+}
+
+.form-container{
+  padding: 0 0 0 35px;
+  position: relative;
+}

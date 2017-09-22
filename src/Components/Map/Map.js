@@ -11,7 +11,7 @@ export default class Map extends Component {
     var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
     map.openInfoWindow(infoWindow, point); //开启信息窗口
     map.setCurrentCity("北京"); // 设置地图显示的城市 此项是必须设置的
-    map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+    // map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
 
 
     // var myGeo = new BMap.Geocoder();
@@ -34,9 +34,9 @@ export default class Map extends Component {
   }
   render() {
     return (
-      <div style={{ width: '100%', height: '100%' ,border:'2px solid #ddd'}}>
+      <div style={{ width: '100%', height: '100%' ,border:'1px solid #ddd'}}>
         <div id='baiduMap' style={{ width: '100%', height: '100%' }}>
-
+            
         </div>
       </div>
     )
