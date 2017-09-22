@@ -21,16 +21,18 @@ export default class Banner extends Component {
   }
 
   timer() {
+    const length = this.props.params.length;
+    this.setState({ len: length });
+
     // 全局变量  window.timerCtrl
     window.timerCtrl = setInterval(() => {
       // console.log(this.state.crrentIndex)
       this.change();
     }, 6000);
   }
-  
+
   componentWillMount() {
-    const length = this.props.params.length;
-    this.setState({ len: length });
+
   }
 
   componentDidMount() {
