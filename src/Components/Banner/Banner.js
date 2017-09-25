@@ -1,42 +1,47 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'; // ES6 
 import './Banner.css'
 
 export default class Banner extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.change = this.change.bind(this);
     this.timer = this.timer.bind(this);
     this.state = {
       crrentIndex: 0,
-      len: 0
+      len: props.params.length - 1
     };
   }
 
   change() {
-
-    this.setState({ crrentIndex: this.state.crrentIndex + 1 });
-    if (this.state.crrentIndex > 1) {
-      this.setState({ crrentIndex: 0 });
-    }
+    // this.setState({ crrentIndex: this.state.crrentIndex + 1 });
+    // if (this.state.crrentIndex > this.state.len) {
+    //   this.setState({ crrentIndex: 0 });
+    // }
+    this.setState({ crrentIndex: this.state.crrentIndex + 1 }, () => {
+      if (this.state.crrentIndex > this.state.len) {
+        this.setState({ crrentIndex: 0 });
+      }
+    });
   }
 
   timer() {
-    const length = this.props.params.length;
-    this.setState({ len: length });
+    // const length = this.props.params.length;
+    // this.setState({ len: length });
 
     // 全局变量  window.timerCtrl
-    window.timerCtrl = setInterval(() => {
+    this.timerCtrl = setInterval(() => {
       // console.log(this.state.crrentIndex)
       this.change();
     }, 6000);
   }
 
-  componentWillMount() {
-
-  }
-
   componentDidMount() {
     this.timer();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerCtrl)
   }
 
   render() {
@@ -72,4 +77,16 @@ export default class Banner extends Component {
       </div>
     )
   }
+}
+
+
+Banner.propTypes = {
+  params: PropTypes.array.isRequired
+}
+
+Banner.defaultProps = {
+  params: [
+    { imgUrl: '../pic/banner.jpg' },
+    { imgUrl: '../pic/banner2.jpg' }
+  ]
 }
