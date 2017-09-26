@@ -1,4 +1,6 @@
-
+.latestNews a{
+  color:#333;
+}
 .latestNews li{
   width: 30%;
   margin:5px 15px;

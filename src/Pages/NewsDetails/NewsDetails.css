@@ -1,0 +1,12 @@
+.newsDetails{
+   /*min-height:100vh;*/
+   background:#f5f5f5;
+   text-align:center;
+   margin-bottom:-100px;
+}
+.newsDetails .article{
+
+}
+.article .news-text {
+  min-height: 100vh;
+}

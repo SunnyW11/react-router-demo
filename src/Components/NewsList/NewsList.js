@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './NewsList.css';
 
 export default class NewsList extends Component {
@@ -24,7 +25,9 @@ export default class NewsList extends Component {
         <li key={index} onMouseEnter={this.hoverEvent} onMouseLeave={this.onmouseleaveEvent}>
           <img src={item.imgUrl} alt="" width='100%' />
           <div className='bottom-world'>
-            <p ref='p'>{item.title}</p>
+            <Link to={'/news/'+index}>
+              <p ref='p'>{item.title}</p>
+            </Link>
             <hr />
             <span>{item.shortWord}</span>
           </div>

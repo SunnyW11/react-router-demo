@@ -13,6 +13,7 @@ import Home from './Pages/Home/Home';
 import Aboutus from './Pages/Aboutus/Aboutus';
 import Product from './Pages/Product/Product';
 import News from './Pages/News/News';
+import NewsDetails from './Pages/NewsDetails/NewsDetails';
 import Connect from './Pages/Connect/Connect';
 import Footer from './Components/Footer/Footer';
 // <CSSTransitionGroup transitionName="fade" transitionEnterTimeout={300} transitionLeaveTimeout={300}>
@@ -27,7 +28,8 @@ class App extends Component {
             <Route path='/' exact={true} component={Home} />
             <Route path='/aboutUs' component={Aboutus} />
             <Route path='/product' component={Product} />
-            <Route path='/news' component={News} />
+            <Route path='/news' exact={true} component={News} />
+            <Route path='/news/:id' component={NewsDetails} />
             <Route path='/connect' component={Connect} />
           <Footer />
         </div>

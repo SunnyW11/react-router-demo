@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types'; // ES6 
+import PropTypes from 'prop-types'; 
 import './Banner.css'
 
 export default class Banner extends Component {
   constructor(props) {
     super(props);
-    this.change = this.change.bind(this);
+    this.autoChange = this.autoChange.bind(this);
     this.timer = this.timer.bind(this);
     this.state = {
       crrentIndex: 0,
@@ -13,7 +13,15 @@ export default class Banner extends Component {
     };
   }
 
-  change() {
+  componentDidMount() {
+    this.timer();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerCtrl)
+  }
+
+  autoChange() {
     // this.setState({ crrentIndex: this.state.crrentIndex + 1 });
     // if (this.state.crrentIndex > this.state.len) {
     //   this.setState({ crrentIndex: 0 });
@@ -26,22 +34,9 @@ export default class Banner extends Component {
   }
 
   timer() {
-    // const length = this.props.params.length;
-    // this.setState({ len: length });
-
-    // 全局变量  window.timerCtrl
     this.timerCtrl = setInterval(() => {
-      // console.log(this.state.crrentIndex)
-      this.change();
+      this.autoChange();
     }, 6000);
-  }
-
-  componentDidMount() {
-    this.timer();
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerCtrl)
   }
 
   render() {
@@ -78,7 +73,6 @@ export default class Banner extends Component {
     )
   }
 }
-
 
 Banner.propTypes = {
   params: PropTypes.array.isRequired
