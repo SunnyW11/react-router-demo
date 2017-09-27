@@ -98,13 +98,16 @@ const LatestNewsList =[
 
 const bannerParams=[
   {imgUrl:'../pic/banner.jpg'},
-  {imgUrl:'../pic/banner2.jpg'}
+  {imgUrl:'../pic/banner2.jpg'},
+  {imgUrl:'../pic/banner3.jpg'},
+  {imgUrl:'../pic/banner4.jpg'},
+  {imgUrl:'../pic/banner5.jpg'}
 ];
 export default class Home extends Component {
   constructor(){
     super();
     this.state={
-      isLoading:true
+      isLoading:false
     }
     // this.changeHeaderByPath=Public.changeHeaderByPath.bind(this);
   }

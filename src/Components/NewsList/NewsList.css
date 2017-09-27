@@ -26,6 +26,7 @@
   color: #000;
 }
 .newsList li .bottom-world p{
+  display: inline-block;
   font-size: 18px;
   margin: 8px 0;
   cursor: pointer;

@@ -99,10 +99,10 @@ export default class Banner extends Component {
           {circle}
         </div>
 
-        <a href="javascript:return false;" className='btn-prev' onClick={() => { this.autoChange('dec') }} >
+        <a href="javascript:return ;" className='btn-prev' onClick={(e) => { this.autoChange('dec');e.stopPropagation() }} >
           <img src="../pic/hover_left.png" alt="" />
         </a>
-        <a href="javascript:return false;" className='btn-next' onClick={() => { this.autoChange('add') }}>
+        <a href="javascript:return ;" className='btn-next' onClick={(e) => { this.autoChange('add');e.stopPropagation() }}>
           <img src="../pic/hover_right.png" alt="" />
         </a>
       </div>

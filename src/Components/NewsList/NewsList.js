@@ -26,7 +26,7 @@ export default class NewsList extends Component {
           <img src={item.imgUrl} alt="" width='100%' />
           <div className='bottom-world'>
             <Link to={'/news/'+index}>
-              <p ref='p'>{item.title}</p>
+              <p>{item.title}</p>
             </Link>
             <hr />
             <span>{item.shortWord}</span>

@@ -30,12 +30,12 @@ class App extends Component {
             <Route path='/product' component={Product} />
             <Route path='/news' exact={true} component={News} />
             <Route path='/news/:id' component={NewsDetails} />
+            <Route path='/connect' component={Connect} />
           <Footer />
         </div>
       </Router>
     );
   }
 }
-            // <Route path='/connect' component={Connect} />
 
 export default App;
