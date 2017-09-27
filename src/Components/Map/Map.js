@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import BMap from 'BMap';
 import './Map.css';
 
 export default class Map extends Component {
   componentDidMount() {
-    var BMap = window.BMap
+    // var BMap = window.BMap;
     var sContent = "地址：北京市";
     var map = new BMap.Map("baiduMap");
     var point = new BMap.Point(116.401, 39.897);

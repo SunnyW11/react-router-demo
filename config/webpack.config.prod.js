@@ -331,4 +331,8 @@ module.exports = {
     tls: 'empty',
     child_process: 'empty',
   },
+   // 百度地图
+  externals:{
+    'BMap':'BMap'
+  }
 };

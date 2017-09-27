@@ -69,11 +69,6 @@ module.exports = {
     devtoolModuleFilenameTemplate: info =>
       path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
   },
-  
-  //百度地图变量
-  // externals:{
-  //   'BMap':'BMap'
-  // },
 
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
@@ -105,6 +100,7 @@ module.exports = {
       // Make sure your source files are compiled, as they will not be processed in any way.
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
     ],
+
   },
   module: {
     strictExportPresence: true,
@@ -267,4 +263,9 @@ module.exports = {
   performance: {
     hints: false,
   },
+   // 百度地图
+  externals:{
+    'BMap':'BMap'
+  }
+
 };
