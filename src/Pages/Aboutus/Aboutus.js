@@ -10,11 +10,13 @@ const staticBanner={
   name:'关于我们',
   englishName:'about us'
 }
+
 const Title2 = {
   chineseTitle: '设计团队',
   englishTitle: 'design team',
   introduceTitle: '原创创作 无与伦比'
 }
+
 const designer = [
   {
     pic: '../pic/team.jpg',
